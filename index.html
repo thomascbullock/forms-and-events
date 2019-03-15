@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms and Events Demo</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form id="sample_form">
+            <fieldset>
+                <label for="first">First Name:</label>
+                <input type="text" name="first" placeholder="Enter First Name" minLength="3" required>
+            </fieldset>
+            <fieldset>
+                <label for="last">Last Name:</label>
+                <input type="text" name="last" placeholder="Enter Last Name" minLength="3" required>
+            </fieldset>
+            <fieldset>
+                <label for="currently_enrolled">Enrolled at Code Fellows?</label>
+                <input type="checkbox" name="enrolled" value="enrolled">
+            </fieldset>
+            <fieldset>
+                <label for="future_classes">Interested in taking more classes?</label>
+                <input type="radio" name="future_classes" value="yes"> yes
+                <input type="radio" name="future_classes" value="no"> no
+            </fieldset>
+            
+            <button id="submit_btn" type="submit">Add Student</button>
+        </form>
+        <script src="./app.js"></script>
+    </body>
+</html>
